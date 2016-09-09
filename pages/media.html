@@ -2,22 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Welcome to Clan Crusaders - RvR Mobile RTS for Andriod and iOS</title>
-    <meta name="description" content="Clan Crusaders is a mobile RTS with realm vs. realm (RvR) and MMO mechanics. Available on Andriod and iOS on launch. Pick a Clan, clash with other realms and join the Crusade!" />
+    <title>Clan Crusaders | Game Info - RvR Mobile RTS for Andriod and iOS</title>
+    <meta name="description" content="Clan Crusaders is a mobile RTS with realm vs. realm (RvR) and MMO mechanics for mobiles. Pick a Clan, clash with other realms and join the Crusade!" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="codeply, Atom">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/clancrusaders.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
     <meta name="author" content="DTK Studios" />
     <meta name="keywords" content="" />
     <meta property="og:url" content="http://www.clancrusaders.com" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Clan Crusaders | RTS with RvR and MMO mechanics for mobiles" />
-    <meta property="og:description" content="Clan Crusaders is a mobile RTS with realm vs. realm (RvR) and MMO mechanics. Available on Andriod and iOS on launch. Pick a Clan, clash with other realms and join the Crusade!" />
-    <meta property="og:image" content="./img/clan-crusader15.jpg" />
+    <meta property="og:description" content="Clan Crusaders is a mobile RTS with realm vs. realm (RvR) and MMO mechanics for mobiles. Pick a Clan, clash with other realms and join the Crusade!" />
+    <meta property="og:image" content="/img/clan-crusader15.jpg" />
   </head>
   <body>
     <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
@@ -29,24 +30,41 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i> Clan Crusaders</a>
+                <a class="navbar-brand page-scroll" href="../index.html#first"><i class="ion-ios-analytics-outline"></i> Clan Crusaders</a>
             </div>
             <div class="navbar-collapse collapse" id="bs-navbar">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a class="page-scroll" href="#one">Game Info</a>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown">Game Summary<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/pages/gameinfo.html#top">The highlights</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/pages/gameinfo.html#story">Story & Lore</a></li>
+                        <li><a href="/pages/gameinfo.html#characters">Characters</a></li>
+                        <li><a href="/pages/gameinfo.html#world">The World</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown">Media<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/pages/media.html#tbc">Teasers</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/pages/media.html#tbc">Screens</a></li>
+                        <li><a href="/pages/media.html#tbc">Videos</a></li>
+                        <li><a href="/pages/media.html#tbc">Press Page</a></li>
+                      </ul>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#three">Media</a>
+                        <a class="page-scroll" href="/index.html#two">Community & Updates</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#two">Community & Updates</a>
+                        <a class="page-scroll" href="/index.html#four">Register for early access</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#four">Register for early access</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#last">Send us a message</a>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown">About Us<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/pages/aboutus.html#team">The Team</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/pages/aboutus.html#contact">Contact Us</a></li>
+
+                      </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -57,288 +75,45 @@
             </div>
         </div>
     </nav>
-    <header id="first">
-        <div class="header-content">
-            <div class="inner">
-                <h1 class="cursive">Clan Crusaders - Pick a Clan and join the Crusade for your realm.</h1>
-                <h6> (P.S. you can play as a Dragon! Awesome!) </h6>
-                <hr>
-                 <a href="#four" id="registerInterest" class="btn btn-primary btn-xl page-scroll">Sign up to Test</a> &nbsp;
-                 <a href="#one" class="btn btn-primary btn-xl page-scroll">Tell me more</a>&nbsp;
 
-            </div>
 
-            <div class="pull-down">
-                <div class="col-lg text-right">
-                     <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl pull-right">Stop / Start Teaser</a>
-                </div>
-            </div>
-        </div>
-        <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="img/home_vidstill.jpg" id="video-background" controls muted="">
-            <source src="vid/home_background.mp4" type="video/mp4">
-            <source src="vid/home_background.webm" type="video/webm">
-            <source src="vid/home_background.ogv" type="video/ogg">
-              Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
-
-    </header>
-    <section class="bg-primary" id="one">
+    <!-- Text in picture Start  -->
+    <section class="gameInfoHead" id="tbc">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
-                    <h2 class="margin-top-0 text-primary">Game Info</h2>
+                    <h2 class="margin-top-0 text-primary">Under COnstruction</h2>
                 </div>
             </div>
                 <br>
             <div class="row">
                 <div class="col-lg text-center">
                     <p class="text-faded">
-                        Clan Crusaders is super easy to learn but difficult to master.
+                        Under Construction
                         <br>
 
                     </p>
                 </div>
             </div>
-                <br>
+      </section>
+          <!-- Text in picture END  -->
+      <section class="textBody" id="storybody">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-4 col-md-4 text-center">
-                                <div class="feature">
-                                    <i class="icon-lg ion-ios-world wow fadeIn" data-wow-delay=".3s"></i>
-                                    <h3>Realm vs. Realm vs. Realm</h3>
-                                    <p class="text-muted">The crusade never ends. Remember the enemy of your enemy is your friend (however fleeting).</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 text-center">
-                                <div class="feature">
-                                    <i class="icon-lg ion-android-time wow fadeInUp" data-wow-delay=".2s"></i>
-                                    <h3>Feature #2</h3>
-                                    <p class="text-muted">The crusade never ends. Remember the enemy of your enemy is your friend (however fleeting).</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 text-center">
-                                <div class="feature">
-                                    <i class="icon-lg ion-ios-people wow fadeIn" data-wow-delay=".3s"></i>
-                                    <h3>Feature #3</h3>
-                                    <p class="text-muted">The crusade never ends. Remember the enemy of your enemy is your friend (however fleeting).</p>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="col-lg-4 col-md-4 text-center">
-                                <div class="feature">
-                                    <i class="icon-lg ion-network wow fadeIn" data-wow-delay=".3s"></i>
-                                    <h3>Story & Lore</h3>
-                                    <p class="text-muted">The crusade never ends. Remember the enemy of your enemy is your friend (however fleeting).</p><br>
-                                    <a href="#three" class="btn btn-info btn-s page-scroll">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 text-center">
-                                <div class="feature">
-                                    <i class="icon-lg ion-woman wow fadeIn" data-wow-delay=".3s"></i>
-                                    <h3>Characters</h3>
-                                    <p class="text-muted">The crusade never ends. Remember the enemy of your enemy is your friend (however fleeting).</p><br>
-                                    <a href="#three" class="btn btn-info btn-s page-scroll">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 text-center">
-                                <div class="feature">
-                                    <i class="icon-lg ion-planet wow fadeIn" data-wow-delay=".3s"></i>
-                                    <h3>The World</h3>
-                                    <p class="text-muted">The crusade never ends. Remember the enemy of your enemy is your friend (however fleeting).</p><br>
-                                      <a href="#three" class="btn btn-info btn-s page-scroll">Learn More</a>
-                                </div>
+                            <div class="col-lg-10 col-md-1 col-xs-10 text-center">
+                              <h3>Need to do more coding here to have  proper multi media gallery</h3>
+
                             </div>
                         </div>
                     </div>
-                    <br>
-            <div class="row">
-                    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
-                    <a href="#three" class="btn btn-default btn-xl page-scroll">Sounds awesome, show me more!</a>
-                  </div>
+        </section>
 
-            </div>
-        </div>
-    </section>
-    <section id="two">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="margin-top-0 text-primary">Get in touch with other crusaders and follow our updates</h2>
-                    <hr class="primary">
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-lg-12 text-left">
-                  <ul class="list-inline">
-                    <li> <div class="text-info"><a href="https://www.facebook.com/clancrusaders/">Clan Crusaders @ Facebook</a> <p class="text-muted">Visit our Facebook pages for regular updates.</p><br></div>
-                  </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="three" class="no-padding">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/unsplash/regular/photo-1430916273432-273c2db881a0%3Fq%3D75%26fm%3Djpg%26w%3D1080%26fit%3Dmax%26s%3Df047e8284d2fdc1df0fd57a5d294614d">
-                        <img src="//splashbase.s3.amazonaws.com/unsplash/regular/photo-1430916273432-273c2db881a0%3Fq%3D75%26fm%3Djpg%26w%3D1080%26fit%3Dmax%26s%3Df047e8284d2fdc1df0fd57a5d294614d" class="img-responsive" alt="Image 1">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/getrefe/regular/tumblr_nqune4OGHl1slhhf0o1_1280.jpg">
-                        <img src="//splashbase.s3.amazonaws.com/getrefe/regular/tumblr_nqune4OGHl1slhhf0o1_1280.jpg" class="img-responsive" alt="Image 2">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/unsplash/regular/photo-1433959352364-9314c5b6eb0b%3Fq%3D75%26fm%3Djpg%26w%3D1080%26fit%3Dmax%26s%3D3b9bc6caa190332e91472b6828a120a4">
-                        <img src="//splashbase.s3.amazonaws.com/unsplash/regular/photo-1433959352364-9314c5b6eb0b%3Fq%3D75%26fm%3Djpg%26w%3D1080%26fit%3Dmax%26s%3D3b9bc6caa190332e91472b6828a120a4" class="img-responsive" alt="Image 3">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-moto-drawing-illusion-nabeel-1440x960.jpg">
-                        <img src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-moto-drawing-illusion-nabeel-1440x960.jpg" class="img-responsive" alt="Image 4">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-new-york-crosswalk-nabeel-1440x960.jpg">
-                        <img src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-new-york-crosswalk-nabeel-1440x960.jpg" class="img-responsive" alt="Image 5">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-clothes-exotic-travel-nabeel-1440x960.jpg">
-                        <img src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-clothes-exotic-travel-nabeel-1440x960.jpg" class="img-responsive" alt="Image 6">
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
-                                <div>
-                                    <i class="icon-lg ion-ios-search"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid" id="four">
-        <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-6">
-                <h2 class="text-center text-primary">Register for Early Access</h2>
-                <hr>
-                <div class="media wow fadeInRight">
-                  <!-- Change the width and height values to suit you best -->
-<div class="typeform-widget" data-url="https://kirit2.typeform.com/to/hYVotR" data-text="Contact Form" style="width:100%;height:500px;"></div>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-<div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"><a href="https://www.typeform.com/examples/forms/contact-form-template/?utm_campaign=hYVotR&amp;utm_source=typeform.com-4384635-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-contactform&amp;utm_term=EN" style="color: #999" target="_blank">Contact form</a>powered by Typeform</div>
-                </div>
-                <hr>
 
-            </div>
-        </div>
-    </section>
-    <!--
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2 class="text-primary">Get Started</h2>
-                <a href="http://www.bootstrapzero.com/bootstrap-template/landing-zero" target="ext" class="btn btn-default btn-lg wow flipInX">Free Download</a>
-            </div>
-            <br>
-            <hr/>
-            <br>
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="row">
-                        <h6 class="wide-space text-center">BOOTSTRAP IS BASED ON THESE STANDARDS</h6>
-                        <div class="col-sm-3 col-xs-6 text-center">
-                            <i class="icon-lg ion-social-html5-outline" title="html 5"></i>
-                        </div>
-                        <div class="col-sm-3 col-xs-6 text-center">
-                            <i class="icon-lg ion-social-sass" title="sass"></i>
-                        </div>
-                        <div class="col-sm-3 col-xs-6 text-center">
-                            <i class="icon-lg ion-social-javascript-outline" title="javascript"></i>
-                        </div>
-                        <div class="col-sm-3 col-xs-6 text-center">
-                            <i class="icon-lg ion-social-css3-outline" title="css 3"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </aside>
 
-  -->
-    <section id="last">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="margin-top-0 wow fadeIn">Send us a message</h2>
-                    <hr class="primary">
-                    <p>Just won the lotto? You think this game will be more epic than Leeroy Jenkins? Your wife is pissed your playing games in the bathroom again? Tell us below! </p>
-                </div>
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <form class="contact-form row">
-                        <div class="col-md-4">
-                            <label></label>
-                            <input type="text" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="col-md-4">
-                            <label></label>
-                            <input type="text" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col-md-4">
-                            <label></label>
-                            <input type="text" class="form-control" placeholder="Phone">
-                        </div>
-                        <div class="col-md-12">
-                            <label></label>
-                            <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
-                        </div>
-                        <div class="col-md-4 col-md-offset-4">
-                            <label></label>
-                            <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
+
     <footer id="footer">
         <div class="container-fluid">
             <div class="row">
@@ -371,7 +146,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-3 text-right">
                     <h4>Follow the game as it develops</h4>
-                    <a href="#four" class="btn btn-primary btn-s page-scroll">Register for early access</a>
+                    <a href="/index.html#four" class="btn btn-primary btn-s page-scroll">Register for early access</a>
                     <BR><BR>
                     <a href="https://www.facebook.com/clancrusaders/" class="btn btn-info btn-s page-scroll"><i class="icon-s ion-social-facebook-outline"></i></a>
                     <a href="https://www.facebook.com/clancrusaders/" class="btn btn-info btn-s page-scroll"><i class="icon-s ion-social-twitter-outline"></i></a>
@@ -437,6 +212,6 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>
