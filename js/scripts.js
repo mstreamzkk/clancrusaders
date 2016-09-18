@@ -41,6 +41,30 @@
 			$(this).parent().siblings().removeClass('open');
 			$(this).parent().toggleClass('open');
 		});
+
+      $('#registration-form').on('submit', function(e) {
+          e.preventDefault();
+          var button = $(this).find('button');
+          var f = e.target;
+          var email = f._replyto.value;
+          var name = f.name.value;
+
+          button.prop('disabled', true);
+          $.ajax({
+              url: 'https://formspree.io/tcfunk25@gmail.com',
+              method: 'POST',
+              data: {
+                  _replyto: email,
+                  name: name,
+              },
+              dataType: 'json',
+          }).then(function(data) {
+              var successText = '<h3 class="text-center text-success"><i class="ion-checkmark-round"></i> Thanks for signing up! We will be in touch soon.</h3>';
+              console.log(data);
+              button.prop('disabled', false);
+              $('#form-parent').html(successText);
+          });
+      });
 	});
 })(jQuery);
 
