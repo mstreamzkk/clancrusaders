@@ -36,7 +36,7 @@ hr.light {
 }
 
 a {
-    color: #70bba4;
+    color: #9c27b0;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -90,7 +90,7 @@ p {
 }
 
 .text-primary {
-    color: #70bba4;
+    color: #9c27b0;
 }
 
 .modal-content {
@@ -124,7 +124,7 @@ footer {
 
 .navbar-header > .navbar-brand {
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
-    color: #70bba4;
+    color: #9c27b0;
     padding: 15px;
     -webkit-transition: padding .2s ease-in;
     -moz-transition: padding .2s ease-in;
@@ -153,20 +153,20 @@ footer {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #70bba4;
+    color: #9c27b0;
 }
 
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #70bba4 !important;
-    background-color: transparent;;
+    color: #9c27b0 !important;
+    background-color: #000;
 }
 
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover
 {
-    background-color: transparent;;
+    background-color: #000;
 }
 
 
@@ -207,7 +207,7 @@ footer {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 15px;
-        color: #70bba4;
+        color: #9c27b0;
         padding: 20px;
         letter-spacing: 1px;
     }
@@ -225,7 +225,7 @@ footer {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #70bba4;
+        color: #9c27b0;
     }
 }
 

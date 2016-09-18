@@ -1,0 +1,45 @@
+@import 'https://fonts.googleapis.com/css?family=Bowlby+One|Corben:400,700|Modak|Rakkas';
+
+.parallax {
+    width: 100%;
+    height: 630px;
+    overflow: hidden;
+    display: block;
+    background-size: 100%;
+}
+.parallax .parallax-background {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.parallax .parallax-background img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.parallax .container {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.parallax .description {
+    margin-top: 200px;
+    padding: 5px;
+}
+
+.parallax .description h1 {
+    font-family: 'Rakkas', cursive;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.parallax .description p {
+    font-size: 1.5em;
+    font-family: 'Rakkas', cursive;
+}
