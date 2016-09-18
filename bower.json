@@ -1,0 +1,7 @@
+{
+  "name": "dtkweb",
+  "dependencies": {
+    "bourbon": "4.2.7",
+    "bootstrap-sass": "^3.3.7"
+  }
+}
