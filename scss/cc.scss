@@ -36,16 +36,12 @@ header {
         padding: 100px 15px;
         text-align: center;
         z-index: 2;
-        /* position: absolute; */
-        /* top: 0; */
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-        /* left: 0; */
-        /* right: 0; */
     }
 
     .description {
-        margin-top: 100px;
+        @media only screen and (min-width: 768px) {
+            margin-top: 100px;
+        }
         padding: 5px;
 
         h1 {
@@ -64,6 +60,11 @@ header {
 section {
     background-color: #333;
     color: white;
+    img {
+        @media only screen and (max-width: 990px) {
+            max-width: 400px;
+        }
+    }
 }
 
 #dragons {
