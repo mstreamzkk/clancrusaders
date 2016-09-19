@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var shell = require('gulp-shell');
 var notify = require('gulp-notify');
-var browserSync = require('browser-sync').create;
+var browserSync = require('browser-sync').create();
 var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 var fs = require("fs");
@@ -42,6 +42,7 @@ gulp.task('sass', function () {
     })
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream())
     .pipe(notify({
       title: "SASS Compiled",
       message: "All SASS files have been recompiled to CSS.",
@@ -58,6 +59,7 @@ gulp.task('compress', function() {
     .pipe(uglify())
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./js'))
+    .pipe(browserSync.reload)
     .pipe(notify({
       title: "JS Minified",
       message: "All JS files in the theme have been minified.",
@@ -71,11 +73,14 @@ gulp.task('compress', function() {
  */
 gulp.task('browser-sync', function() {
   browserSync.init({
-    port: config.browserSync.port,
-    proxy: config.browserSync.hostname,
-    open: config.browserSync.openAutomatically,
-    reloadDelay: config.browserSync.reloadDelay,
-    injectChanges: config.browserSync.injectChanges
+      server: {
+          baseDir: './',
+      }
+    // port: config.browserSync.port,
+    // proxy: config.browserSync.hostname,
+    // open: config.browserSync.openAutomatically,
+    // reloadDelay: config.browserSync.reloadDelay,
+    // injectChanges: config.browserSync.injectChanges
   });
 });
 
@@ -88,6 +93,9 @@ gulp.task('watch', function() {
 
   // watch js for changes and clear drupal theme cache on change
   gulp.watch(['js-src/**/*.js'], ['compress']);
+
+    // reload on html changes
+  gulp.watch("**/*.html").on('change', browserSync.reload);
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['watch', 'browser-sync']);
