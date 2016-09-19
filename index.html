@@ -21,6 +21,7 @@
     </head>
     <body>
         <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="backdrop">&nbsp;</div>
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
@@ -29,17 +30,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll" href="/index.html">Clan Crusaders</a>
+                    <a class="navbar-brand page-scroll" href="/index.html#first">Clan Crusaders</a>
                 </div>
                 <div class="navbar-collapse collapse" id="bs-navbar">
                     <ul class="nav navbar-nav">
-                        <li class="dropdown"><a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown">Game Summary<b class="caret"></b></a>
+                        <li class="navbar-title-lg"><a class="navbar-brand" href="/">Home</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown">Game Info<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#about">The highlights</a></li>
-                                <li class="divider"></li>
-                                <li><a href="/pages/gameinfo.html#story">Story & Lore</a></li>
-                                <li><a href="/pages/gameinfo.html#characters">Characters</a></li>
-                                <li><a href="/pages/gameinfo.html#world">The World</a></li>
+                                <li><a class="page-scroll" href="#about">Story & Lore</a></li>
+                                <li><a class="page-scroll" href="#dragons">Characters</a></li>
                             </ul>
                         </li>
                         <li class="dropdown"><a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown">Media<b class="caret"></b></a>
@@ -49,21 +48,19 @@
                                 <li><a href="/pages/media.html#tbc">Screens</a></li>
                                 <li><a href="/pages/media.html#tbc">Videos</a></li>
                                 <li><a href="/pages/media.html#tbc">Press Page</a></li>
+                                <li><a data-toggle="modal" title="Download Press Kit" href="#PressKitModal">Press Kit</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="page-scroll" href="/index.html#two">Community & Updates</a>
+                            <a class="page-scroll hidden-sm" href="#register">Register for Early Access</a>
+                            <a class="page-scroll visible-sm" href="#register">Early Access</a>
                         </li>
-                        <li>
-                            <a class="page-scroll" href="/index.html#register">Register for early access</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#about-us" class="page-scroll">About Us</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a class="page-scroll" data-toggle="modal" title="Download Press Kit" href="#PressKitModal">Press Kit</a>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown">About Us<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#about-us" class="page-scroll">The Team</a></li>
+                                <li><a href="#community" class="page-scroll">Community & Updates</a></li>
+
+                            </ul>
                         </li>
                     </ul>
                 </div>

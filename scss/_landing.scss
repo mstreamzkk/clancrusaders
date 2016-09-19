@@ -114,9 +114,11 @@ footer {
 }
 
 .navbar-default {
-    border-color: rgba(35,35,35,.05);
+    /* border-color: rgba(35,35,35,.05); */
     /* font-family: 'Questrial','Helvetica Neue',Arial,sans-serif; */
-    background-color: #222;
+    /* background-color: #222; */
+    border: none;
+    background-color: transparent;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s;
@@ -169,8 +171,41 @@ footer {
     background-color: transparent;;
 }
 
+nav .navbar-title-lg {
+    display: none;
+}
+
+nav.navbar .backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    background-color: #222;
+}
+
+nav.navbar.affix .backdrop {
+    opacity: 1.0;
+}
 
 @media(min-width:768px) {
+    nav {
+        .navbar-title-lg {
+            display: inline-block;
+        }
+        .navbar-collapse {
+            text-align: center;
+        }
+        .navbar-header {
+            display: none;
+        }   
+        .nav.navbar-nav {
+            float: none;
+            vertical-align: top;
+            display: inline-block;
+        }
+    }
+
     .navbar-default {
         border-color: transparent;
         background-color: transparent;
@@ -201,8 +236,8 @@ footer {
     }
 
     .navbar-default.affix {
-        border-color: rgba(34,34,34,.05);
-        background-color: #222;
+        /* border-color: rgba(34,34,34,.05); */
+        /* background-color: #222; */
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
