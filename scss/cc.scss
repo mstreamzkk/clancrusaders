@@ -11,6 +11,16 @@ $red: red;
 $yellow: yellow;
 $purple: purple;
 
+@mixin center-bg() {
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    filter: blur(20px);
+}
+
 header {
     .inner {
         height: 100%;
@@ -58,6 +68,7 @@ header {
 }
 
 section {
+    position: relative;
     background-color: #333;
     color: white;
     img {
@@ -65,24 +76,45 @@ section {
             max-width: 400px;
         }
     }
+
+    .background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        @include center-bg;
+    }
 }
+
 
 #dragons {
-    background-color: $red;
-    color: white;
-}
-
-#thieves {
-    background-color: $yellow;
+    .background {
+        background-image: url(../img/dragon-bg.png);
+    }
+    // background-color: $red;
     color: #333;
 }
 
+#thieves {
+    .background {
+        background-image: url(../img/thief-bg.png);
+    }
+    // background-color: $yellow;
+    color: white;
+}
+
 #knights {
-    background-color: $purple;
+    .background {
+        background-image: url(../img/knight-bg.png);
+    }
+    // background-color: $purple;
     color: white;
 }
 
 #register {
+    .background {
+        background: $yellow;
+    }
     h2 {
         color: $purple;
     }
