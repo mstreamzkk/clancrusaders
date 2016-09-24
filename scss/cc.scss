@@ -86,6 +86,10 @@ section {
     }
 }
 
+#features {
+    // Fix dragon background image bleed
+    z-index: 2;
+}
 
 #dragons {
     .background {
