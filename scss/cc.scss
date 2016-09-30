@@ -18,7 +18,7 @@ $purple: purple;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    filter: blur(20px);
+    /* filter: blur(10px); */
 }
 
 header {
@@ -93,7 +93,8 @@ section {
 
 #dragons {
     .background {
-        background-image: url(../img/dragon-bg.png);
+        /* background-image: url(../img/dragon-bg.png); */
+        background-image: url(../img/dragon-bg.svg);
     }
     // background-color: $red;
     color: #333;
@@ -101,7 +102,8 @@ section {
 
 #thieves {
     .background {
-        background-image: url(../img/thief-bg.png);
+        /* background-image: url(../img/thief-bg.png); */
+        background-image: url(../img/thief-bg.svg);
     }
     // background-color: $yellow;
     color: white;
@@ -109,7 +111,8 @@ section {
 
 #knights {
     .background {
-        background-image: url(../img/knight-bg.png);
+        /* background-image: url(../img/knight-bg.png); */
+        background-image: url(../img/knight-bg.svg);
     }
     // background-color: $purple;
     color: white;
